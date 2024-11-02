@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "alphafold"
+version = "2.3.5-a29"
+description = ""
+authors = ["cbrown <cbrown@alpha29.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+numpy = "^2.0.2"
+absl-py = "^2.1.0"
+biopython = "^1.84"
+pandas = "^2.2.3"
+scipy = "^1.14.1"
+jax = "^0.4.35"
+dm-haiku = "^0.0.13"
+dm-tree = "^0.1.8"
+ml-collections = "^0.1.1"
+tensorflow-cpu = "^2.18.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+isort = "^5.13.2"
+ruff = "^0.7.2"
+pytest = "^8.3.3"
+pytest-cov = "^6.0.0"
+mock = "^5.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
