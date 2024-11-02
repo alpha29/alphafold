@@ -7,7 +7,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = ">=3.10,<4.0"
-numpy = "^2.0.2"
+numpy = "^1.26.4"
 absl-py = "^2.1.0"
 biopython = "^1.84"
 pandas = "^2.2.3"
@@ -17,7 +17,8 @@ dm-haiku = "^0.0.13"
 dm-tree = "^0.1.8"
 ml-collections = "^0.1.1"
 tensorflow-cpu = "^2.18.0"
-
+openmm = "^8.1.1"
+pdbfixer = {git = "https://github.com/openmm/pdbfixer.git", rev = "1.9"}
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.10.0"
